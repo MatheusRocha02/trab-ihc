@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e9f3f1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/loginClient.js" defer></script>
+    <title>Fale conosco</title>
+</head>
+<body>
+   
+    <div class="login-container">
+        <div class="wellcome-tittle">
+        <h2>Fale com a gente</h2>
+        </div>
+        <form class="contact-form" action="send_email.php" method="POST">
+            <div class="input-div">
+                <label for="name">Nome: *</label>
+                <input type="text" name="name" class="name-input" required>
+            </div>
+            <div class="input-div">
+                <label for="email">E-mail: *</label>
+                <input type="email" name="email" class="email-input" required>
+            </div>
+            <div class="input-div">
+                <label for="message">Sua mensagem: *</label>
+                <textarea name="message" class="message"></textarea>
+            </div>
+            <div class="login-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="copyright">&copy 2024 desenvolvido por Matheus Rocha Dev</p>
+    </footer>
+</body>
+</html>
